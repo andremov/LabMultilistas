@@ -6,16 +6,16 @@
 package labmultilistas;
 
 import java.io.File;
-import java.io.FilenameFilter;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 
 /**
  *
- * @author Andrés Movilla
  */
 public class AgregarEscenario extends javax.swing.JFrame {
 
+	File file;
+	
     /**
      * Creates new form AgregarEscenario
      */
@@ -147,7 +147,7 @@ public class AgregarEscenario extends javax.swing.JFrame {
 	    String patrocinador = campoPatrocinador.getText();
 	    double presupuesto = Double.parseDouble(campoPresupuesto.getText());
 	    int numero = Integer.parseInt(campoNumero.getText());
-	    LabMultilistas.nuevoEscenario(numero, patrocinador, presupuesto);
+	    LabMultilistas.nuevoEscenario(numero, patrocinador, presupuesto, file);
 	    VentanaPrincipal.actualizaCampo();
 	    dispose();
 	} catch (Exception e) {
@@ -161,8 +161,8 @@ public class AgregarEscenario extends javax.swing.JFrame {
 	int returnVal = fc.showOpenDialog(this);
 
         if (returnVal == JFileChooser.APPROVE_OPTION) {
-            File file = fc.getSelectedFile();
-	    displayFile.setText(file.getName());
+            file = fc.getSelectedFile();
+			displayFile.setText(file.getName());
         } else {
         }
     }//GEN-LAST:event_jButton3ActionPerformed

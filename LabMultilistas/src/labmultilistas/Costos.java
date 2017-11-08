@@ -7,7 +7,6 @@ package labmultilistas;
 
 /**
  *
- * @author Andrés Movilla
  */
 public class Costos extends javax.swing.JFrame {
 

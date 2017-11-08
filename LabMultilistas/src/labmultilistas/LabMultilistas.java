@@ -1,6 +1,8 @@
 
 package labmultilistas;
 
+import java.io.File;
+
 public abstract class LabMultilistas {
     
     static Escenario escenarios;
@@ -16,8 +18,8 @@ public abstract class LabMultilistas {
 	return todo;
     }
     
-    public static boolean nuevoEscenario(int numero, String patrocinador, double presupuesto) throws Exception {
-	Escenario temp1 = new Escenario(numero, patrocinador, presupuesto);
+    public static boolean nuevoEscenario(int numero, String patrocinador, double presupuesto, File file) throws Exception {
+	Escenario temp1 = new Escenario(numero, patrocinador, presupuesto, file);
 	boolean exito = false;
 	if (numeroEscenarios < 5) {
 	    boolean puedeAgregar=true;

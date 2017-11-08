@@ -1,6 +1,8 @@
 
 package labmultilistas;
 
+import java.io.File;
+
 public class Escenario {
     
     int numero;
@@ -10,13 +12,15 @@ public class Escenario {
     Escenario siguiente;
     double presupuestoRestante;
     int numeroBandas;
+	File foto;
 
-    public Escenario(int numero, String patrocinador, double presupuesto) {
+    public Escenario(int numero, String patrocinador, double presupuesto, File foto) {
 	this.numero = numero;
 	this.patrocinador = patrocinador;
 	this.presupuesto = presupuesto;
 	this.presupuestoRestante = presupuesto;
 	this.numeroBandas = 0;
+	this.foto = foto;
     }
     
     public void ordenarBandas() {

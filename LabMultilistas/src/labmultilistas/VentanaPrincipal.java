@@ -9,7 +9,6 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Andrés Movilla
  */
 public class VentanaPrincipal extends javax.swing.JFrame {
 

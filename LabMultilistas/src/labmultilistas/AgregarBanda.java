@@ -9,7 +9,6 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Andrés Movilla
  */
 public class AgregarBanda extends javax.swing.JFrame {
 
